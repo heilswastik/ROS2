@@ -1,0 +1,26 @@
+# 🚀 Installing Visual Studio Code on Ubuntu
+
+This guide helps you install **Visual Studio Code (VS Code)** on Ubuntu using the official Microsoft repository, which ensures that your VS Code stays up to date.
+
+---
+
+## 🧰 Prerequisites
+
+Open a terminal and make sure your system is up to date:
+```
+sudo apt update
+sudo apt install wget gpg
+```
+---
+## Download and Add Microsoft’s GPG Key
+```
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+```
+---
+## Update Package Lists and Install VS Code
+```
+sudo apt update
+sudo apt install code
+```
+---
