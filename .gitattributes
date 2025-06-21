@@ -1,0 +1,4 @@
+*.xml linguist-detectable
+*.xacro linguist-detectable
+*.urdf linguist-detectable
+
